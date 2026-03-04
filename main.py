@@ -1,9 +1,7 @@
 #1 The Multi-Line Story:
-"""print(He failed again, but this time he didn’t quit.
-Instead of blaming luck, he opened his laptop and started learning.
-Months later, the same boy became the one others asked for help)
+
 #2The Border:
-print("*python*")
+"""print("*python*")
 #3The Separator:
 print(1,2,3,4,5,sep="->")
 #4 The End Game:
@@ -47,10 +45,15 @@ print(f"number one:{num1} and number two: {num2}and its Remainder:{num1/num2} ")
 #2. The Power:
 x=int(input("enter your first number"))
 y=int(input("enter your second number"))
-print(f"{x**y}")"""
+print(f"{x**y}")
 #3. The Floor:
 num1=int(input("enter your first number"))
 num2=int(input("enter your second number"))
 print(f"{num1//num2}")
 #4. The Comparison:
 
+name=input("enter your name")
+color=input("enter your color")
+print(f"hi {name} is {color} looks great on you")"""
+
+print(10-3*2)

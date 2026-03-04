@@ -1,79 +1,56 @@
-#promblem 1
-"""name=input("enter you name")
-age=int(input("enter you age"))
-pasword=input("enter you password")
-if len(name)<5:
-    print("your name is invalied")
-    for i in pasword:
-        if "@" not in i:
-           print("your password is weak")
-elif age<18:
-    print("your age is less than 18")
-else:
-    print("login complet")
-#problem 2
-sentes=input("enter you sentence")
-print(len(sentes))
-print(sentes.split())
-print(sentes.count("a"))
-print(sentes[::1])
-num=int (input("enter number"))
-for i in num:
-    if i%2==0:
-        print(f"{num} is an even number")
-    elif num%2!=0:
-        print(f"{num} is an odd number")
-    else:
-           for p in range(2,i):
-               if i%p==0:
-                   print(f"{num} is an prime number")
-               else:
-                   print(f"{num} is not a prime number")
-#problem 3
+#1 The Multi-Line Story:
+"""print(He failed again, but this time he didn’t quit.
+Instead of blaming luck, he opened his laptop and started learning.
+Months later, the same boy became the one others asked for help)
+#2The Border:
+print("*python*")
+#3The Separator:
+print(1,2,3,4,5,sep="->")
+#4 The End Game:
+print("my name is umar",end=" ")
+print("I am student")
+#5. The Formatter:
+decnum=12.34567
+print(f"{decnum} is {decnum}")
 
-username = input("Enter your username: ")
 
-if len(username) < 6:
-    print("Your username length is less than 6")
+#2. The input() Function
+#1 The Greeter
+name=input("enter your name")
+color=input("enter your color")
+print(f"hi {name} is {color} looks great on you")
 
-else:
-    has_digit = False
-    for i in username:
-        if i.isdigit():
-            has_digit = True
-    if has_digit:
-        print("Your username is valid")
-    else:
-        print("Username must contain at least 1 digit")
-#promblem 5
+#2 The Age Gap:
+age=int(input("enter your age"))
+print(f"{age+50} your age in 2050")
 
-students = {
-    "Ali": 45,
-    "Umar": 82,
-    "Ahmed": 30,
-    "Hamza": 90,
-    "Saad": 55}
-totalmarks = 0
-highmarks = 0
-toper = ""
-for name, marks in students.items():
-    if marks < 50:
-        print(f"{name} has less than 50 marks")
-    if marks > 80:
-        print(f"{name} is Topper")
-    totalmarks += marks
-    if marks > highmarks:
-        highmarks = marks
-        toper = name
-average = totalmarks / len(students)
+#3 The Multiplier:
+num1=int(input("enter your first number"))
+num2=int(input("enter your second number"))
+print(num1*num2)
+TypeError: can't multiply sequence by non-int of type 'str'
+#4 The Repeater:
+word=input("enter your word")
+num=int(input("enter your number"))
+print(num*word)
+#5 The Bill Splitter:
+totalbill=int(input("enter total bill of amount"))
+people=int(input("enter number of people"))
+print(f"{totalbill/people}")
 
-print("Average Marks:", average)
-print("Highest Marks Student:", toper, "-", highmarks)
 
-#problem 6
+#3. Operators
+# 1The Remainder:
+num1=int(input("enter your first number"))
+num2=int(input("enter your second number"))
+print(f"number one:{num1} and number two: {num2}and its Remainder:{num1/num2} ")
+#2. The Power:
+x=int(input("enter your first number"))
+y=int(input("enter your second number"))
+print(f"{x**y}")"""
+#3. The Floor:
+num1=int(input("enter your first number"))
+num2=int(input("enter your second number"))
+print(f"{num1//num2}")
+#4. The Comparison:
 
-word = input("Enter a word: ")
-if word == word[::-1]:
-    print("Palindrome")
-else:
-    print("Not Palindrome")"""
